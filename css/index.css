@@ -44,7 +44,7 @@ body{
 .inicio #home{
     padding-top: 90px;
     min-height: 650px;
-    background-image:url(img/overlay-lg.png), url(img/fondo-home.jpg);
+    background-image:url(../img/overlay-lg.png), url(../img/fondo-home.jpg);
     background-size: cover;
     color: #fff;
 }
