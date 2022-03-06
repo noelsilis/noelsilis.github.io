@@ -1,188 +1,160 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <!--BootStrap CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--ICONOS-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <!--FONT-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;900&display=swap" rel="stylesheet">
-  <!--CSS local-->
-  <link rel="stylesheet" type="text/css" href="css/index.css?1.0.0" />
-  <link rel="stylesheet" type="text/css" href="css/normalize.css?1.0.0" />
-  <link rel="stylesheet" type="text/css" href="css/estilos.css?1.0.0" />
-  <link rel="stylesheet" type="text/css" href="css/especialidad.css?1.0.0" />
-  <title>Curriculum</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Elsie:wght@400;900&family=Montserrat:wght@100;300;400&display=swap"
+    rel="stylesheet">
+  <!-- Estilos locales -->
+  <link href="styles.css" rel="stylesheet">
+  <title>Galas</title>
 </head>
 
 <body>
-  <nav id="menu" class="navbar navbar-expand-lg fixed-top justify-content-center">
-    <div class="contenedor">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-        aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-three-dots"></i>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm" id="nav-public">
+    <div class="container">
+      <img src="img/galax-blanco.png" href="#" class="navbar-brand">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="tabs navbar-nav col-sm">
-          <li class="nav-item"><a class="nav-link" href="#home"><span class="tab-text">
-                Inicio</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#historial"><span class="tab-text">
-                Historial Laboral</span></a></li>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#objetivo"><span class="tab-text">
-                Objetivo Profesional</span></a>
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#formacion"><span class="tab-text">
-                Formación</span></a>
+            <a class="nav-link" href="html/pasteles.html">Pasteles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto"><span class="tab-text">
-                Contacto</span></a>
+            <a class="nav-link">Pastelitos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Galletas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Dulces</a>
           </li>
         </ul>
+        <a class="btn btn-outline-primary rounded-pill" href="html/login.html">Iniciar Sesión</a>
       </div>
     </div>
   </nav>
-  <div class="inicio">
-    <section id="home">
-      <div class="container">
-        <div class="content-center topmargin-lg">
-          <p>
-          <h3>HOLA, SOY</h3>
-          </p>
-          <p>
-          <h1>MAYE SILIS SERGIO NOEL</h1>
-          </p>
-          <p>
-          <h6>Y ESTE ES MI RESUMEN</h6>
-          </p>
+  <div class="row m-auto" id="fila-inicio">
+    <div class="logo">
+      <h4>Pasteleria y reposteria</h4>
+      <h1>GALAS</h1>
+      <span>Sabor y sensaciones</span>
+    </div>
+  </div>
+  <div class="container pt-5 pb-5" id="fila-nosotros">
+    <div class="titulo">
+      <h1>NOSOTROS</h1>
+    </div>
+    <div class="linea"></div>
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="img/img1_undraw.svg" class="mx-auto d-block img-fluid" alt="...">
+      </div>
+      <div class="col-lg-7 px-2">
+        <p>
+          <h4>
+            Somos una empresa pastelera tradicional, con más de 40 años en el mercado Mexicano.
+            Comprometidos con ofrecerte productos de alta calidad y una excelente atención.
+          </h4>
+        </p>
+        <h5>
+          Sabor y sensaciones
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="fila-horario">
+    <div class="titulo">
+      <h1>HORARIO DE ATENCIÓN</h1>
+    </div>
+    <div class="linea"></div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-4">
+        <img src="img/img2_undraw.svg" class="mx-auto d-block img-fluid p-3" alt="">
+        <div class="text-center">
+          <h4>
+            8 am - 6pm
+          </h4>
+          <h5>
+            Lunes a Sabado
+          </h5>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container py-5">
+    <div class="titulo">
+      <h1>UBICACIÓN</h1>
+    </div>
+    <div class="linea"></div>
+    <!-- <a class="align-icons" href="#"><h3><i class="bi bi-geo-alt-fill"></i><span>Morelos, #103, Col. Roma, Ciudad
+      de México</h3> </span></a> -->
+    <div class="row">
+      <div class="col-lg-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233.5939097520922!2d-99.2162709769641!3d20.485614667511186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a0e228858c57%3A0x4c97fb0bb91c3309!2sMexiMercado!5e0!3m2!1ses-419!2smx!4v1646513370955!5m2!1ses-419!2smx"
+          style="border:0;" allowfullscreen="" loading="lazy" class="shadow"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- <img src="img/wave.svg" class="wave"> -->
+  <footer>
+    <div class="container">
+      <div class="row pb-5 pt-5">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <h1>CONTACTO</h1>
+          <p>
+            Puedes contactarnos a traves de nuestras redes sociales o nuestro número telefónico
+          </p>
+          <a class="align-icons" href="#"><i class="bi bi-facebook"></i><span>Facebook</span></a>
+          <a class="align-icons" href="#"><i class="bi bi-instagram"></i><span>Instagram</span></a>
+          <a class="align-icons" href="#"><i class="bi bi-whatsapp"></i><span>77 210 4082</span></a>
+          <a class="align-icons" href="#"><i class="bi bi-envelope-fill"></i><span>pasteleria@galas.com</span></a>
+          <!-- <a class="align-icons" href="#"><i class="bi bi-geo-alt-fill"></i><span>Av. Morelos, #103, Col. Roma, Ciudad
+              de México</span></a> -->
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+    <div class="derechos">
+      <div class="container">
+        <b>© 2022 Sergio Noel Maye Silis</b><br>
+        Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    </section>
-  </div>
-  <div class="resumen">
-    <section class="site-section " id="historial">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mb-5">
-            <div class="section-heading text-center">
-              <h2>MI <strong>HISTORIAL LABORAL</strong></h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h2 class="mb-5">Cursos</h2>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> 1 de Diciembre 2020</span>
-              <h3>CCNA R&S: Scaling Networks</h3>
-              <p>Por: Cisco Academy</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> 23 de Enero 2020</span>
-              <h3>CCNA R&S: Introduction to Networks</h3>
-              <p>Por: Cisco Academy</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> 23 de Noviembre 2020</span>
-              <h3>Diplomado Técnico en Inteligencia de Negocios</h3>
-              <p>Por: Capacitate para el Empleo: Fundación Carlos Slim</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> 8 de Septiembre 2019.</span>
-              <h3>Partner: NDG Linux Essentials</h3>
-              <p>Por: Cisco Academy</p>
-              <span class="school">ITSOEH</span>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h2 class="mb-5">Experiencia</h2>
-            <div class="resume-item mb-4">
-              <span class="date"> Mayo 2020</span>
-              <h3>Página web para departamento de Residencia y Servicio Social ITSOEH</h3>
-              <p>Involucrado en diseño gráfico de los diversos componentes haciendo uso de herramientas como CSS, JS, BootStrap 4.</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> Mayo 2019</span>
-              <h3>Página web de e-comerce o 'Carrito de Compras'</h3>
-              <p>Involucrado en diseño gráfico de los diversos componentes haciendo uso de herramientas como CSS, JS, BootStrap 4.</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> Enero 2021 - Actual</span>
-              <h3>Nueva versión de  la página web de la divisón de Ingeniería en Sistemas Computacionales</h3>
-              <p>Involucrado en el desarrollo de los diversos componentes haciendo uso de herramientas como CSS, JS, BootStrap 4, Spring MVC.</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> Mayo 2018</span>
-              <h3>Aplicación de escritorio - Carrito de Compras</h3>
-              <p>Involucrado en desarrollo mediante el lenguaje de programación Java e IDE NetBeans 8</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> Abril 2018</span>
-              <h3>Aplicación de escritorio -Juego de química básica</h3>
-              <p>Desarrollo de módulos para juego de 'memorama' mediante el lenguaje de programación Java e IDE NetBeans 8</p>
-              <span class="school">ITSOEH</span>
-            </div>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> Diciembre 2016</span>
-              <h3>Aplicación de administración de ventas para 'Balconería Torres'</h3>
-              <p>Desarrollo de  software administrativo de ventas mediante VB.NET y SQL Server</p>
-              <span class="school">ITSOEH</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="especialidad">
-    <section id="objetivo">
-      <div class="contenedor-texto">
-        <h2>OBJETIVO</h2>
-        <p>Llegar a ser un desarrollador WEB de nivel competente, tomando como base mis conocimientos
-          adquiridos; con la finalidad de aportar beneficios y desarrollarme de forma
-          profesional y personal.</p>
-      </div>
-      <img src="img/objetivo.svg">
-    </section>
-    <section id="formacion">
-      <div class="contenedor-texto">
-        <h2>FORMACIÓN</h2>
-        <p>Instituto Tecnológico Superiror del Occidente del Estado de Hidalgo</p>
-          <p>Ingeniería en Sistemas Computacionales</p>
-          <p><i class="bi bi-geo-alt-fill"></i> Mixquiahuala de Juarez, Hidalgo, México</p>
-          <p>Colegio De Estudios Cientificos y Tecnológicos Del Estado De Hidalgo</p>
-          <p>Carrera Técnica En Programación</p>
-          <p><i class="bi bi-geo-alt-fill"></i> Ixmiquilpan, Hidalgo, México</p>
-      </div>
-      <img src="img/formacion.svg">
-    </section>
-    <section id="contacto">
-      <div class="contenedor-texto">
-        <h2>CONTACTO</h2>
-        <p><i class="bi bi-envelope-fill"></i> smaye@itsoeh.edu.mx</p>
-        <p><i class="bi bi-phone-fill"></i> 772 104 0082</p>
-        <p><i class="bi bi-facebook"></i> NOEL SILIS</p>
-      </div>
-      <img src="img/contacto.svg">
-    </section>
-  </div>
-  <!--JS Local-->
-  <script type="text/javascript" src="js/index.js?1.0.0"></script>
-  <!--Bootstrap JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
+
 </html>

@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Elsie:wght@400;900&family=Montserrat:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <!-- Estilos locales -->
+  <link href="../styles.css" rel="stylesheet">
+  <!-- Contenido dinamico con JavaScript -->
+  
+  <title>Galas</title>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm" id="nav-public">
+    <div class="container">
+      <img src="../img/galax-blanco.png" href="#" class="navbar-brand">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Pasteles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Pastelitos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Galletas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Dulces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Pedidos</a>
+          </li>
+        </ul>
+        <a class="btn btn-outline-primary rounded-pill" href="login.html">Iniciar Sesión</a>
+      </div>
+    </div>
+  </nav>
+  <div class="row m-auto" id="fila-inicio">
+    <div class="logo">
+      <h4>Pasteleria y reposteria</h4>
+      <h1>GALAS</h1>
+      <span>Sabor y sensaciones</span>
+    </div>
+  </div>
+  <!-- <img src="img/wave.svg" class="wave"> -->
+  <div class="container pt-5 pb-5" id="fila-pasteles">
+    <div class="titulo m-auto">
+      <h1>PASTELES</h1>
+    </div>
+    <div class="linea"></div>
+    <div class="row">
+      <div class="col-sm-4">
+        <a class="card" data-bs-toggle="modal" data-bs-target="#pastel-1">
+          <img src="../img/pasteles/pastel1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">$ 859 MXN</h5>
+            <p class="card-text">Pastel de tres leches</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a class="card" data-bs-toggle="modal" data-bs-target="#pastel-2">
+          <img src="../img/pasteles/pastel2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">$ 889 MXN</h5>
+            <p class="card-text">Pastel de chocolate y frutas</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a class="card" data-bs-toggle="modal" data-bs-target="#pastel-3">
+          <img src="../img/pasteles/pastel3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">$ 499 MXN</h5>
+            <p class="card-text">Pastel tipo flan con frutas</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <a class="card" data-bs-toggle="modal" data-bs-target="#pastel-4">
+          <img src="../img/pasteles/pastel4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">$ 789 MXN</h5>
+            <p class="card-text">Pastel de tres leches con base de café</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a class="card" data-bs-toggle="modal" data-bs-target="#pastel-5">
+          <img src="../img/pasteles/pastel5.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">$ 929 MXN</h5>
+            <p class="card-text">Pastel de chocolate con frutas</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a class="card" data-bs-toggle="modal" data-bs-target="#pastel-6">
+          <img src="../img/pasteles/pastel6.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">$ 659 MXN</h5>
+            <p class="card-text">Pastel de vainilla y cubierta sabor café</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inicia Modal Pastel 1 -->
+  <div class="modal fade" id="pastel-1" tabindex="-1" aria-labelledby="pastel-1-Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pastel-1-Label">Pastel de tres leches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="../img/pasteles/pastel1.png" class="shadow" id="img-pastel">
+            </div>
+            <div class="col-sm-7">
+              <div class="container">
+                <h5 class="card-title">$ 859 MXN</h5>
+                <div class="linea-sm"></div>
+                <form>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir un sabor</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Tres leches</option>
+                      <option>Chocolate +40</option>
+                      <option>Vainilla +$50</option>
+                      <option>Café +$70</option>
+                      <option>Galleta +$60</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir una decoración</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Trozos de chocolate</option>
+                      <option>Frutos rojos +$100</option>
+                      <option>Frutos verdes +90</option>
+                      <option>Mixto +$200</option>
+                      <option>Sin decoración -$100</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Estoy deacuerdo con mi elección</label>
+                  </div>
+                  <h6 class="pt-3">REALIZAR PEDIDO</h6>
+                  <div class="linea-sm"></div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu nombre completo.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Número de teléfono</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu número de teléfono.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu correo electrónico.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Termina Modal Pastel 1-->
+  <!-- Inicia Modal Pastel 2 -->
+  <div class="modal fade" id="pastel-2" tabindex="-1" aria-labelledby="pastel-2-Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pastel-2-Label">Pastel de tres leches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="../img/pasteles/pastel2.png" class="shadow" id="img-pastel">
+            </div>
+            <div class="col-sm-7">
+              <div class="container">
+                <h5 class="card-title">$ 859 MXN</h5>
+                <div class="linea-sm"></div>
+                <form>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir un sabor</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Tres leches</option>
+                      <option>Chocolate +40</option>
+                      <option>Vainilla +$50</option>
+                      <option>Café +$70</option>
+                      <option>Galleta +$60</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir una decoración</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Trozos de chocolate</option>
+                      <option>Frutos rojos +$100</option>
+                      <option>Frutos verdes +90</option>
+                      <option>Mixto +$200</option>
+                      <option>Sin decoración -$100</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Estoy deacuerdo con mi elección</label>
+                  </div>
+                  <h6 class="pt-3">REALIZAR PEDIDO</h6>
+                  <div class="linea-sm"></div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu nombre completo.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Número de teléfono</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu número de teléfono.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu correo electrónico.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Termina Modal Pastel 2-->
+  <!-- Inicia Modal Pastel 3 -->
+  <div class="modal fade" id="pastel-3" tabindex="-1" aria-labelledby="pastel-3-Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pastel-3-Label">Pastel de tres leches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="../img/pasteles/pastel3.png" class="shadow" id="img-pastel">
+            </div>
+            <div class="col-sm-7">
+              <div class="container">
+                <h5 class="card-title">$ 859 MXN</h5>
+                <div class="linea-sm"></div>
+                <form>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir un sabor</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Tres leches</option>
+                      <option>Chocolate +40</option>
+                      <option>Vainilla +$50</option>
+                      <option>Café +$70</option>
+                      <option>Galleta +$60</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir una decoración</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Trozos de chocolate</option>
+                      <option>Frutos rojos +$100</option>
+                      <option>Frutos verdes +90</option>
+                      <option>Mixto +$200</option>
+                      <option>Sin decoración -$100</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Estoy deacuerdo con mi elección</label>
+                  </div>
+                  <h6 class="pt-3">REALIZAR PEDIDO</h6>
+                  <div class="linea-sm"></div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu nombre completo.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Número de teléfono</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu número de teléfono.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu correo electrónico.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Termina Modal Pastel 3-->
+  <!-- Inicia Modal Pastel 4 -->
+  <div class="modal fade" id="pastel-4" tabindex="-1" aria-labelledby="pastel-4-Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pastel-4-Label">Pastel de tres leches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="../img/pasteles/pastel4.png" class="shadow" id="img-pastel">
+            </div>
+            <div class="col-sm-7">
+              <div class="container">
+                <h5 class="card-title">$ 859 MXN</h5>
+                <div class="linea-sm"></div>
+                <form>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir un sabor</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Tres leches</option>
+                      <option>Chocolate +40</option>
+                      <option>Vainilla +$50</option>
+                      <option>Café +$70</option>
+                      <option>Galleta +$60</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir una decoración</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Trozos de chocolate</option>
+                      <option>Frutos rojos +$100</option>
+                      <option>Frutos verdes +90</option>
+                      <option>Mixto +$200</option>
+                      <option>Sin decoración -$100</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                    <label class="form-check-label" for="exampleCheck1">Estoy deacuerdo con mi elección</label>
+                  </div>
+                  <h6 class="pt-3">REALIZAR PEDIDO</h6>
+                  <div class="linea-sm"></div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu nombre completo.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Número de teléfono</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu número de teléfono.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu correo electrónico.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Termina Modal Pastel 4-->
+  <!-- Inicia Modal Pastel 5-->
+  <div class="modal fade" id="pastel-5" tabindex="-1" aria-labelledby="pastel-5-Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pastel-5-Label">Pastel de tres leches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="../img/pasteles/pastel5.png" class="shadow" id="img-pastel">
+            </div>
+            <div class="col-sm-7">
+              <div class="container">
+                <h5 class="card-title">$ 859 MXN</h5>
+                <div class="linea-sm"></div>
+                <form>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir un sabor</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Tres leches</option>
+                      <option>Chocolate +40</option>
+                      <option>Vainilla +$50</option>
+                      <option>Café +$70</option>
+                      <option>Galleta +$60</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir una decoración</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Trozos de chocolate</option>
+                      <option>Frutos rojos +$100</option>
+                      <option>Frutos verdes +90</option>
+                      <option>Mixto +$200</option>
+                      <option>Sin decoración -$100</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Estoy deacuerdo con mi elección</label>
+                  </div>
+                  <h6 class="pt-3">REALIZAR PEDIDO</h6>
+                  <div class="linea-sm"></div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu nombre completo.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Número de teléfono</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu número de teléfono.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu correo electrónico.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Termina Modal Pastel 5-->
+  <!-- Inicia Modal Pastel 3 -->
+  <div class="modal fade" id="pastel-6" tabindex="-1" aria-labelledby="pastel-6-Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pastel-6-Label">Pastel de tres leches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="../img/pasteles/pastel6.png" class="shadow" id="img-pastel">
+            </div>
+            <div class="col-sm-7">
+              <div class="container">
+                <h5 class="card-title">$ 859 MXN</h5>
+                <div class="linea-sm"></div>
+                <form>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir un sabor</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Tres leches</option>
+                      <option>Chocolate +40</option>
+                      <option>Vainilla +$50</option>
+                      <option>Café +$70</option>
+                      <option>Galleta +$60</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Añadir una decoración</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option selected>Trozos de chocolate</option>
+                      <option>Frutos rojos +$100</option>
+                      <option>Frutos verdes +90</option>
+                      <option>Mixto +$200</option>
+                      <option>Sin decoración -$100</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck6">
+                    <label class="form-check-label" for="exampleCheck1">Estoy deacuerdo con mi elección</label>
+                  </div>
+                  <h6 class="pt-3">REALIZAR PEDIDO</h6>
+                  <div class="linea-sm"></div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu nombre completo.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Número de teléfono</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu número de teléfono.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresa correctamente tu correo electrónico.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Termina Modal Pastel 6-->
+  <footer>
+    <div class="container">
+      <div class="row pb-5 pt-5">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <h1>CONTACTO</h1>
+          <p>
+            Puedes contactarnos a traves de nuestras redes sociales o nuestro número telefónico
+          </p>
+          <a class="align-icons" href="#"><i class="bi bi-facebook"></i><span>Facebook</span></a>
+          <a class="align-icons" href="#"><i class="bi bi-instagram"></i><span>Instagram</span></a>
+          <a class="align-icons" href="#"><i class="bi bi-whatsapp"></i><span>77 210 4082</span></a>
+          <a class="align-icons" href="#"><i class="bi bi-envelope-fill"></i><span>pasteleria@galas.com</span></a>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+    <div class="derechos">
+      <div class="container">
+        <b>© 2022 Sergio Noel Maye Silis</b><br>
+        Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
