@@ -1,0 +1,254 @@
+/*
+PALETA DE COLORES
+
+Morado #306add
+Azul #1f3e72 //Color de titulos
+Azul #108fe4 //Background imagenes degradado con morado
+Gris #6d7b93 //Color de links navbar y texto general
+Gris #ebf2fe //Background de los iconos
+Gris #e5e4f5 //Logos vacunas Covid
+
+*/
+
+/*
+  Tipografias disponibles
+  
+  font-family: 'Inter', sans-serif;
+  Thin 100
+  Extra-light 200
+  Light 300
+  Regular 400
+  Bold 700
+  Extra-bold 800
+  
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  color: #6d7b93;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  color: #306add !important;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+nav a {
+  color: #6d7b93 !important;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.box {
+  position: relative;
+  z-index: 2;
+  top: -150px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 70%;
+  /* max-height: 80%; */
+  padding: 20px 40px;
+}
+
+.box h5 {
+  color: #1f3e72;
+  font-weight: 700;
+  margin-left: 35px;
+}
+
+.my-btn {
+  padding: 15px 27px 15px 27px;
+  background-color: #306add;
+  text-align: center;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.my-btn-contact {
+  padding: 12px 25px 12px 25px;
+  background-color: #ebf2fe;
+  text-align: center;
+  color: #306add;
+  font-weight: 700;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.my-btn-contact:hover {
+  background-color: #306add;
+  color: #ffffff;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+#titulo {
+  padding-top: 150px;
+  padding-inline: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #1f3e72;
+  font-weight: 700;
+}
+
+#titulo h1 {
+  font-size: 60px;
+}
+
+#cuerpo-texto {
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+}
+
+
+#imagen-1 {
+  background-image: linear-gradient(to left, #306add, #108fe4);
+  padding-top: 100px;
+}
+
+#imagen-2 {
+  background-image: linear-gradient(to left, #306add, #108fe4);
+  height: 350px;
+}
+
+#imagen-3 {
+  background-image: linear-gradient(to left, #306add, #108fe4);
+  height: 400px;
+}
+
+.bg-white-1 {
+  margin-top: 250px;
+  width: 100%;
+  background-color: red;
+}
+
+#seccion-3 img {
+  position: relative;
+  z-index: 3;
+  top: -200px;
+}
+
+#seccion-4 img {
+  position: relative;
+  z-index: 2;
+  top: -250px;
+}
+
+#seccion-4 .contact {
+  color: #1f3e72;
+  font-size: 19px;
+  line-height: 10px;
+}
+
+.box-contact {
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.box-contact:hover {
+  box-shadow: 0px 30px 30px 0px #306add20 !important;
+}
+
+/* .align-icons-1{
+  display: flex;
+} */
+
+.align-icons-1 i {
+  padding: 5px 8px;
+  background-color: #ebf2fe;
+  color: #306add;
+  margin-right: 10px;
+  border-radius: 6px;
+  /* box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.1); */
+}
+
+.align-icons-2 i {
+  padding: 5px 8px;
+  background-color: #feffe0;
+  color: #ffe710;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+#seccion-2 img {
+  filter: grayscale(1) opacity(15%);
+  transition: 0.5s;
+}
+
+#seccion-2 img:hover {
+  filter: grayscale(0.0) opacity(100%);
+}
+
+.benefits-box {
+  border-radius: 10px;
+  /* max-height: 28rem; */
+  height: 300px;
+  transition: 0.5s;
+}
+
+.benefits-box i {
+  transition: 0.5s;
+}
+
+.benefits-box:hover,
+.benefits-box i:hover {
+  box-shadow: 0px 30px 30px 0px #306add20 !important;
+}
+
+#seccion-3,
+#seccion-4 {
+  padding-top: 100px;
+}
+
+.accordion-title {
+  color: #1f3e72;
+}
+
+footer {
+  background-color: #ebf2fe;
+}
+
+footer a {
+  text-decoration: none;
+  color: #6d7b93;
+}
+
+footer span,
+a {
+  font-size: 13px;
+}
+
+footer a:hover {
+  color: #306add;
+}
+
+small {
+  font-size: 10px;
+}
