@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300;400;500;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Titulo -->
+    <title>Pokedex LaunchX</title>
+    <!-- Estilos locales -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="titulo pb-3">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="d-flex flex-wrap mb-4">
+                                    <div><img src="img/circle-1.png" id="circle-1" class="me-3"></div>
+                                    <div><img src="img/circle-2.png" id="circle-2" class="me-3"></div>
+                                    <div><img src="img/circle-3.png" id="circle-3" class="me-3"></div>
+                                    <div><img src="img/circle-3.png" id="circle-3" class="me-3"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="img/logo.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linea"></div>
+                    <div class="seccion-pokemon pt-5 pb-3">
+                        <div class="row my-4">
+                            <div class="col-sm-6">
+                                <div class="box-pokemon p-4">
+                                    <div class="box-2-pokemon p-3">
+                                        <img src="img/pokeball.png" alt="Pokemon" id="pokeImg" class="img-fluid pb-2">
+                                        <h4 id="pokemon-name">Pokémon</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row d-flex flex-wrap pt-4">
+                                    <div class="col-9">
+                                        <div class="d-flex flex-wrap">
+                                            <div class="linea-2 shadow me-2"></div>
+                                            <div class="linea-3 shadow me-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="text-end">
+                                            <img src="img/circle-5.png" id="circle-5" class="shadow">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-5">
+                                    <div class="col"></div>
+                                    <div class="col text-center">
+                                        <button type="button" class="btn btn-dark shadow-lg"><i
+                                                class="bi bi-caret-up-fill"></i></button><br>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-dark shadow-lg" onclick="previosPokemon()"><i
+                                                    class="bi bi-caret-left-fill"></i></button>
+                                            <button type="button" class="btn btn-dark"><i
+                                                    class="bi bi-circle"></i></button>
+                                            <button type="button" class="btn btn-dark shadow-lg" onclick="nextPokemon()"><i
+                                                    class="bi bi-caret-right-fill"></i></button>
+                                        </div>
+                                        <button type="button" class="btn btn-dark shadow-lg"><i
+                                                class="bi bi-caret-down-fill"></i></button><br>
+                                    </div>
+                                    <div class="col"></div>
+                                </div>
+                                <div class="row pt-4">
+
+                                </div>
+                            </div>
+                        </div>
+                        <label for="pokemon" class="form-label">Buscar pokemon:</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Recipient's username"
+                                aria-describedby="button-addon2" id="pokeName" name="pokeName">
+                            <button class="btn btn-primary ms-3" type="button" id="button-addon2"
+                                onclick="fetchPokemon()"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="estadisticas px-2 py-4">
+                        <div class="px-3 pb-3 d-flex flex-wrap">
+                            <h6 class="desc-datos me-2">TIPO:</h6>
+                            <h5 id="pokemon-tipo"></h5>
+                        </div>
+                        <div class="px-3 pb-3 d-flex flex-wrap">
+                            <h6 class="desc-datos me-2">HABILIDADES:</h6>
+                            <h5 id="pokemon-habilidad"></h5>
+                        </div>
+                        <div class="row pb-3">
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="px-3 pb-3 d-flex flex-wrap">
+                            <h6 class="desc-datos me-2">MOVIMIENTOS:</h6>
+                            <h5 id="pokemon-movimientos"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="pokeapi.js"></script>
+</body>
+
+</html>
