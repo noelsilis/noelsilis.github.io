@@ -9332,7 +9332,7 @@ textarea.form-control-lg {
   width: 30px;
   z-index: 99;
   cursor: pointer;
-  top: -20px; }
+  top: -10px; }
   .site-mobile-menu-close > span {
     cursor: pointer;
     display: block;
@@ -9344,7 +9344,7 @@ textarea.form-control-lg {
       content: "";
       width: 2px;
       height: 30px;
-      background: #000; }
+      background: #fff; }
     .site-mobile-menu-close > span:before {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -9438,9 +9438,10 @@ textarea.form-control-lg {
       text-align: center;
       cursor: pointer;
       border-radius: 50%;
-      border: 1px solid #f8f9fa; }
+      color: #adb5bd;
+      font-size: 20px; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
-        font-size: 14px;
+        font-size: 20px;
         z-index: 20;
         font-family: "icomoon";
         content: "\e313";
