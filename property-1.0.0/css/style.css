@@ -10165,7 +10165,9 @@ textarea {
   background: #fff;
   border-radius: 4px;
   padding: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px; 
+  transition: 0.5s;
+  border-radius: 8px;}
   .box-feature h3, .box-feature .h3 {
     font-size: 16px;
     margin: 0;
@@ -10177,6 +10179,8 @@ textarea {
     display: block;
     padding: 0;
     line-height: 0; }
+    .box-feature:hover{
+      box-shadow: 0px 30px 30px 0px #306add20; }
 
 .custom-pagination a {
   display: inline-block;
